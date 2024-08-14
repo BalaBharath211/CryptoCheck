@@ -1,6 +1,10 @@
 import express from "express";
 import bodyParser from "body-parser";
 import axios from "axios";
+import dotenv from 'dotenv';
+
+// Call config() method to load environment variables
+dotenv.config();
 
 const app = express();
 const port = 3000;

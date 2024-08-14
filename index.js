@@ -17,7 +17,6 @@ app.get("/",(req, res) => {
     res.render('index.ejs');
     
 });
-
 app.post('/check-price', async (req, res) => {
     function calculate24hChange(currentPrice, price24hAgo) {
         if (!price24hAgo || price24hAgo === 0) {

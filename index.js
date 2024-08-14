@@ -29,7 +29,7 @@ app.post('/check-price', async (req, res) => {
         return currentPrice * circulatingSupply;
     }
     const cryptoSymbol = req.body.cryptoSymbol.toUpperCase(); 
-    const apiKey = '73c4c929-1b75-4b2f-a755-57ec3c3b54de'; 
+    const apiKey = process.env.API_KEY; 
 
     try {
         const response = await axios.get('https://api.blockchain.com/v3/exchange/tickers', {

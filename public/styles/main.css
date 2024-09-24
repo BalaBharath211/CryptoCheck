@@ -74,6 +74,12 @@ button.btn{
     outline: none;
     transition: scale 0.2 ease;
    }
+   .btn:hover{
+    color: #fff;
+    background-color:orangered;
+    scale:0.85;
+
+   }
    .btn:active{
     scale:0.85;
    }
@@ -125,5 +131,33 @@ button.btn{
 .nav-links a:hover {
     color: #ddd;
 }
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+    .hero {
+        margin-top: 20%; 
+        padding: 10px;  
+        text-align: center;
+    }
 
+    .head, .head2, .data {
+        font-size: 1.5rem; 
+        text-align: center; 
+    }
+
+    .data {
+        margin-bottom: 15px; 
+    }
+
+    input {
+        font-size: 1.5rem;  
+        padding: 10px 20px;
+        line-height: initial; 
+        width: 60%; 
+        margin: 10px auto; 
+    
+}
+
+}
 

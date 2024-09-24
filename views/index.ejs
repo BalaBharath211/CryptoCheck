@@ -22,11 +22,11 @@
       </form><br>
     
     <% if(locals.content){ %>
-        <h3 class="data"><span style="font-weight:bolder">Cryptocurrency Name :</span> <span style="font-weight:lighter"><%=cryptoName%></span></h3>                   
-        <h3 class="data"><span style="font-weight:bolder">Current Price : </span><span style="font-weight:lighter"><%=content%></span></h3>                            
-        <h3 class="data"><span style="font-weight:bolder">24H Change : </span><span style="font-weight:lighter"><%=percentage%> </span></h3>                                     
-        <h3 class="data"><span style="font-weight:bolder">24H Volume : </span><span style="font-weight:lighter"><%=volume%></span></h3>                                  
-        <h3 class="data"><span style="font-weight:bolder">Market Cap : </span><span style="font-weight:lighter;"><%=MarketCap%> </span></h3>
+        <h3 class="data"><span style="font-weight:bold">Cryptocurrency Name :</span> <span style="font-weight:bold;color: rgba(5, 34, 33, 0.959);"><%=cryptoName%></span></h3>                   
+        <h3 class="data"><span style="font-weight:bold">Current Price : </span><span style="font-weight:bold;color: rgba(5, 34, 33, 0.959);"><%=content%></span></h3>                            
+        <h3 class="data"><span style="font-weight:bold">24H Change : </span><span style="font-weight:bold;color: rgba(5, 34, 33, 0.959);"><%=percentage%> </span></h3>                                     
+        <h3 class="data"><span style="font-weight:bold">24H Volume : </span><span style="font-weight:bold; color: rgba(5, 34, 33, 0.959);"><%=volume%></span></h3>                                  
+        <h3 class="data"><span style="font-weight:bold">Market Cap : </span><span style="font-weight:bold; color: rgba(5, 34, 33, 0.959);"><%=MarketCap%> </span></h3>
         
         <% } else { %>
             
@@ -35,15 +35,7 @@
         </div>
         </div>
         </div>
-        <script>
-          const hamburger = document.querySelector(".hamburger");
-          const navLinks = document.querySelector(".nav-links");
-      
-          hamburger.addEventListener("click", () => {
-              navLinks.classList.toggle("active");
-              hamburger.classList.toggle("active");
-          });
-      </script>
-        <%- include("partials/footer.ejs") %>
+        
+                <%- include("partials/footer.ejs") %>
         </body>
 </html>
